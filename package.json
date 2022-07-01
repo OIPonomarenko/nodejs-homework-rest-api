@@ -1,10 +1,11 @@
 {
-  "name": "template",
+  "name": "nodejs-homework-rest-api",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./server.js",
     "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
+    "test": "jest",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
@@ -22,12 +23,18 @@
     "random-key": "^0.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-jest": "^28.1.2",
     "eslint": "7.19.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "5.2.0",
-    "nodemon": "2.0.15"
-  }
+    "jest": "^28.1.2",
+    "nodemon": "2.0.15",
+    "supertest": "^6.2.3"
+  },
+  "main": "index.js"
 }
